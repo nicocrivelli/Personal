@@ -1,5 +1,11 @@
 package exA;
-
+/*
+ Autor: Nicolas Crivelli
+ Metodos:
+ 	public ArrayList<String> readDat(String url)
+ 		Recibe la url donde se encuentra el archivo .dat con la información de las estrellas
+ 		y guarda en un ArrayList únicamente los nombres de las estrellas, el cual luego es retornado.
+ */
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;

@@ -1,4 +1,15 @@
 package exA;
+/*
+Autor: Nicolas Crivelli
+Metodos:
+	public void createGraph(ArrayList<String> nodes)
+		Recibe un ArrayList que contiene los nombres de los vértices a graficar, ordenados de a pares
+		en cuanto a su conexión.
+		No retorna un valor pero invoca a la función viewGraph.
+	public void viewGraph(DefaultDirectedGraph<String, DefaultEdge> g, String url)
+		Recibe el gráfico creado en la funcion createGraph junto a la url donde se guardará la imagen
+		generada. Guarda la imagen y luego la visualiza en una ventana emergente.
+*/
 
 import java.awt.Color;
 import java.awt.FlowLayout;
