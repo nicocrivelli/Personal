@@ -1,4 +1,4 @@
-package exA;
+package exB;
 /*
  Autor: Nicolas Crivelli
  Metodos:

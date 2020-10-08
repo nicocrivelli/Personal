@@ -1,4 +1,4 @@
-package exA;
+package exB;
 /*
 Autor: Nicolas Crivelli
 Metodos:
@@ -19,7 +19,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import javax.imageio.ImageIO;
-import javax.media.opengl.*;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -32,47 +31,7 @@ import com.mxgraph.layout.mxCircleLayout;
 import com.mxgraph.layout.mxIGraphLayout;
 import com.mxgraph.util.mxCellRenderer;
 
-public class Draw implements GLEventListener {
-
-	@Override
-	public void init(GLAutoDrawable drawable) {
-
-	}
-
-	@Override
-	public void dispose(GLAutoDrawable drawable) {
-
-	}
-
-	@Override
-	public void display(GLAutoDrawable drawable) {
-
-		final GL2 gl = drawable.getGL().getGL2();
-		// Draw H
-		gl.glBegin(GL2.GL_LINES);
-		gl.glVertex2d(-0.8, 0.6);
-		gl.glVertex2d(-0.8, -0.6);
-		gl.glVertex2d(-0.8, 0.6);
-		gl.glVertex2d(-0.4, -0.6);
-		gl.glVertex2d(-0.4, 0.6);
-		gl.glVertex2d(-0.4, -0.6);
-		gl.glEnd();
-		// Draw W
-		gl.glBegin(GL2.GL_LINES);
-		gl.glVertex2d(0.4, 0.6);
-		gl.glVertex2d(0.4, -0.6);
-		gl.glVertex2d(0.4, -0.6);
-		gl.glVertex2d(0.8, -0.6);
-		gl.glVertex2d(0.4, 0.6);
-		gl.glVertex2d(0.8, 0.6);
-		gl.glEnd();
-
-	}
-
-	@Override
-	public void reshape(GLAutoDrawable drawable, int x, int y, int width, int height) {
-
-	}
+public class Graph {
 
 	public void createGraph(ArrayList<String> nodes) {
 
